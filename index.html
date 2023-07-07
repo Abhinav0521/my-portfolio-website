@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            color: rgb(36, 36, 36);
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: black;
+        }
+
+        h3 {
+            font-size: 1.1rem;
+            color: black;
+            font-weight: lighter;
+        }
+
+        h4 {
+            font-size: 0.9rem;
+            color: black;
+            font-weight: lighter;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(78, 78, 78);
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        header {
+            background-image: url(asset\ 32.png);
+            background-size: 150px;
+            background-color: rgb(40, 237, 255);
+            position: fixed;
+            width: 100%;
+            padding: 13px 20px;
+            justify-content: flex-end;
+            align-items: center;
+            box-shadow: 0px 0px 20px 4px #a8a8a8;
+        }
+
+        #title {
+            text-shadow: 3px 0px 3px white;
+            margin-right: auto;
+            padding-left: 30px;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .content-list {
+            gap: 40px;
+        }
+
+        .right {
+            margin-left: auto;
+            padding-right: 25px
+        }
+
+        .btn {
+            /* background-image: url(asset\ 32.png); */
+            /* background-size: 150px; */
+            margin-right: 40px;
+            background-color: rgb(230, 230, 230);
+            padding: 10px;
+            border-radius: 20px;
+            border-width: 3px;
+            border-color: rgb(255, 255, 255);
+            box-shadow: 3px 5px 4px 1px #8b8b8b;
+        }
+
+        .welcome {
+            width: 100%;
+            height: 600px;
+            text-align: center;
+        }
+
+        .text {
+            top: 25%;
+            padding-top: 20%;
+        }
+
+        .up-arrpw {
+            width: 70px;
+            padding: 5rem;
+        }
+
+        .info {
+            width: 100%;
+            height: max-content;
+            background-color: rgb(255, 85, 0);
+            background-image: url(asset\ 32.png);
+            background-size: 400px;
+            border-radius: 40px 40px 40px 40px;
+            border-top: 7px solid rgb(254, 140, 0);
+            box-shadow: 0 4px 20px 20px #b5b5b5;
+        }
+
+        .info-container {
+            align-items: center;
+            padding: 10% 8%;
+
+        }
+
+        .me {
+            display: block;
+            margin-left: 8%;
+            margin-right: 10%;
+            height: 400px;
+            width: auto;
+            border-radius: 30px;
+            /* width: 250px; */
+        }
+
+        .info-right {
+            width: 300px;
+            margin-right: 0;
+        }
+
+        .Academics {
+            padding: 9rem 0;
+            width: 100%;
+        }
+        .head-b{
+            justify-content: center;
+            width: 100%;
+            display: flex;
+            padding-top: 0px;
+            padding-bottom: 50px;
+            text-decoration: underline;
+        }
+
+        .cont-box {
+            align-items: center;
+            gap: 40px;
+            width: 100%;
+            margin-top: 20px;
+            justify-content: space-evenly;
+        }
+
+        .acedmic-block {
+            width: 20%;
+            height: 180px;
+            border-radius: 30px;
+            box-shadow: 0px 0px 20px 4px #a8a8a8;
+            padding: 30px;
+            align-items: center;
+            background: linear-gradient(45deg, #0e6bff, #b1e0f1);
+        }
+
+        .year {
+            border-radius: 7px;
+            padding: 5px 10px;
+            background-color: rgb(255, 255, 255);
+            width: fit-content;
+        }
+
+        .project {
+            width: 100%;
+            padding: 40px 0px;
+            background-color: rgb(125, 253, 255);
+            background-image: url(asset\ 32.png);
+            background-size: 400px;
+            border-radius: 40px 40px 40px 40px;
+            border-top: 7px solid rgb(20, 251, 255);
+            box-shadow: 0 4px 20px 20px #b5b5b5;
+        }
+
+        /* dbcubd */
+
+        .catalog-container {
+            overflow-x: auto;
+            white-space: nowrap;
+            width: 80%;
+            /* Set the desired width for the container */
+        }
+
+        .catalog-item {
+            display: inline-block;
+            width: 95%;
+            height: 500px;
+            /* Add styling for each catalog item */
+            /* Example styles: */
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+        }
+
+
+
+        /* bdcubcudb */
+
+        .contact {
+            width: auto;
+            height: auto;
+        }
+
+        .bye {
+            align-items: center;
+            padding: 100px 0;
+            text-shadow: 2px 2px 8px #FF0000;
+        }
+
+        .neeche {
+            padding-top: 30px;
+            width: 100%;
+            height: auto;
+            background-color: darkgrey;
+            align-items: center;
+        }
+        .contact-info{
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navigation bar -->
+    <header class="flex head">
+        <h2 id="title">
+            <a href="#">Abhinav</a>
+        </h2>
+        <nav>
+            <ul class="flex content-list">
+                <li>
+                    <h3><a href="#info">About</a></h3>
+                </li>
+                <li>
+                    <h3><a href="#Academics">Academics</a></h3>
+                </li>
+                <li>
+                    <h3><a href="#projects">Projects</a></h3>
+                </li>
+            </ul>
+        </nav>
+        <div class="right">
+            <div class="btn">
+                <a href="#contact">
+                    <h3>Contact</h3>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- greetings page -->
+    <div class="welcome">
+        <DIV class="text">
+            <h1>Welcome To My Website</h1>
+            <h4 style="padding-top: 20px;">SWAGAT HAI &#128591;</h4>
+        </DIV>
+        <img class="up-arrpw" src="up-arrow.png" alt="">
+    </div>
+
+    <!-- information page  -->
+    <div class="info" id="info">
+        <div class="info-container flex">
+            <img class="me" src="me.jpg" alt="">
+            <div class="info-right">
+                <h2>Hi visitor!</h2>
+                <h2 class="flex" style="width: fit-content;">I'm Abhinav Chandra</h2>
+                <h3 style="padding-top: 20px;">I am a Data Science Engineer and enthusiast.</h4>
+            </div>
+        </div>
+    </div>
+
+    <!-- academic section -->
+    <div class="Academics" id="Academics">
+        <div>
+            <h2 class="head-b">Acedimic Information</h2>
+        </div>
+        <div class="cont-box flex">
+            <div class="acedmic-block">
+                <h2 style="font-size: 1.3rem; color: black;">B.TECH - CSE</h2>
+                <p style="padding: 2px 0px; font-size: 0.7rem;"> SPECIALIZATION IN ARTIFICIAL INTELLIGENCE</p>
+                <div class="year">2020 - 2024</div>
+                <p style="font-size: 13px; font-style: italic; padding: 9px 0px;">Parul University, Vadodara Gujarat,INDIA</p>
+                <h3 style="font-size: 14px; font-weight: 500;">7th <br>Semester Ongoing <br>
+                    CGPA 7.05/10</h3>
+            </div>
+            <div class="acedmic-block">
+                <h2 style="font-size: 1.3rem; color: black;">SENIOR SECONDARY SCHOOL (12th)</h2>
+                <p style="padding: 2px 0px; font-size: 0.7rem;"> CBSE</p>
+                <div class="year">2018 - 2020</div>
+                <p style="font-size: 13px; font-style: italic; padding: 9px 0px;">K N MEMO ACADEMY, ASARGANJ, BIHAR, INDIA</p>
+                <h3 style="font-size: 14px; font-weight: 500;">PCM</h3>
+            </div>
+            <div class="acedmic-block">
+                <h2 style="font-size: 1.3rem; color: black;">SECONDARY SCHOOL (10th)</h2>
+                <p style="padding: 10px 0px; font-size: 0.7rem;">CBSE</p>
+                <div class="year" style="margin: 10px 0px;">2018</div>
+                <p style="font-size: 13px; font-style: italic; padding: 9px 0px;">  S B B V MANDIR,<BR> MOTIHARI, BIHAR,INDIA</p>
+                <!-- <h3 style="font-size: 14px; font-weight: 500;"></h3> -->
+            </div>
+        </div>
+        <!-- <div>
+            <h2 class="head-b">Tech Stack</h2>
+        </div>
+        <div class="Tech">
+            
+        </div> -->
+    </div>
+
+    <!-- projects section -->
+    <div class="project" id="projects">
+        <center class="window">
+            <div class="catalog-container">
+                <div class="catalog-item">Item 1</div>
+                <div class="catalog-item">Item 2</div>
+                <div class="catalog-item">Item 3</div>
+                <div class="catalog-item">Item 4</div>
+                <div class="catalog-item">Item 5</div>
+                <div class="catalog-item">Item 6</div>
+                <!-- Add more catalog items as needed -->
+            </div>
+        </center>
+    </div>
+
+    <!-- footer -->
+    <div class="contact" id="contact">
+        <center>
+            <h2 class="bye">Thanks For Visiting My Website &#128522;</h2>
+            <div class="neeche">
+                <h2 class="contact-info">Contact info</h2>
+                <span class="contact-info"><h3>chandraabhinav57@gmail.com</h3></span>
+                <a href="https://github.com/Abhinav0521"><i class="fa fa-github contact-info" style="font-size:24px"></i></a>
+                <a href="https://www.instagram.com/invites/contact/?i=hryxkf7h2ybh&utm_content=2aaec6a"></a><i class="contact-info fa fa-instagram" style="font-size:24px"></i></a>
+                <a href="https://www.linkedin.com/in/abhinavchandra21?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B3M7n7jQrSlm1CfRmWskJFg%3D%3D"></a><i class="contact-info fa fa-linkedin-square" style="font-size:24px"></i></a>
+                <a href="https://www.facebook.com/abhinav.chandra.5492"></a><i class="contact-info fa fa-facebook" style="font-size:24px"></i></a>
+            </div>
+        </center>
+    </div>
+
+</body>
+
+</html>
